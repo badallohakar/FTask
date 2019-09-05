@@ -1,0 +1,11 @@
+.chkbx{
+    zoom: 2.5;
+}
+.rdb{
+    background: #ff0045;
+    color: white;
+    padding: 5dp;
+} 
+.inpt{
+    width: 120px;
+}

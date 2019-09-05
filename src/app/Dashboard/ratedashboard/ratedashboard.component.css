@@ -1,0 +1,26 @@
+h4{
+    color: gray;
+    margin-top:15px;
+}
+.inte{
+    width: 80px;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+}
+ul li{
+    text-align: right;
+    font-size: 12px;
+}
+.container{
+    margin-top: 15px;
+}
+.row{
+    margin: 10px;
+}
+.btn-success{
+    background:lightgoldenrodyellow;
+    color: gray;
+    border: 1px solid lightgray;
+    float: right;
+}

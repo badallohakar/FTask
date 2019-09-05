@@ -1,0 +1,23 @@
+h5{
+    color: white;
+    background: #ff0045;
+    padding: 5px;
+    border: 1px solid white;
+}
+h5:hover{
+    color: #ff0045;
+    background: white;
+    padding: 5px;
+    border: 1px solid #ff0045;
+    
+}
+active{
+    color: #ff0045;
+    background: white;
+    padding: 5px;
+    border: 1px solid #ff0045;
+}
+.contents{
+    background: white;
+     min-height: 100vh;
+ }

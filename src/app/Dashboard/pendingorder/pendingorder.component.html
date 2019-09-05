@@ -1,0 +1,38 @@
+<div class="container">
+
+    <h2 class="text-align">Pending Orders</h2>
+  
+      <table class="table">
+          <thead>
+            <tr>
+              <th>Sr no.</th>
+              <th>Name</th>
+              <th>Mobile No.</th>
+              <th>Quantity</th>
+              <th>Total Bill</th>
+              <th>Date Of Order</th>
+              <th>Order Complition Date</th>
+              <th>Update</th>
+            </tr> 
+          </thead>
+          <tbody *ngFor="let ord of ordersPData">
+          
+              <tr *ngFor="let ord1 of ord">
+                  {{getmeserial()}}
+                <td >{{serialn}}</td>
+                <td>{{ord1.name}}</td>
+                <td>{{ord1.mobilen}}</td>
+                <td>{{ord1.quantity}}</td>
+                <td>{{ord1.totalamount}}</td>
+                <td>{{ord1.date}}</td>
+                <td>{{ord1.dateofdelivery}}</td>
+                <td>
+                    <button type="button" (click)="sendtoComplete(ord1.orderuid,bill.value)" class="btn btn-success" title="Complete">Complete</button>
+                    <input type="text"class="form-control inpt" #bill placeholder="Enter Bill No.">
+                
+                  </td>
+              </tr>
+               
+            </tbody>
+        </table>
+  </div>

@@ -1,0 +1,51 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.min.css";
+body{
+    margin: 0;
+    background:url('assets/images/back.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.loginparent{
+    
+    width: 450px;
+    height: auto;
+    background-color: #00000061;
+    padding-bottom: 15px;
+    border-radius: 35px 0px 35px 0px;
+    position: relative;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.text-center h2{
+    color:white;
+}
+.loginparameter{
+    width: 80%;
+    height: 80%;
+   margin: auto;
+   margin-top: 80px;
+}
+.mtop{
+    margin-top: 12px;
+    margin-bottom: 10px;
+}
+.custombtn{
+    width: 48%;
+    height: auto;
+    border: 1px solid white;
+    color: white;
+    margin-left: 4px;   
+}
+.custombtn:hover{
+    background: #19f3c270;
+    transition: background 1s, color 1s, border 1s;
+    border: 1px solid #19f3c270;
+    color: white;
+}

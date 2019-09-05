@@ -1,0 +1,43 @@
+<div class="container">
+
+    <h2 class="text-align">Completed Orders</h2>
+  
+      <table class="table">
+          <thead>
+            <tr>
+              <th>Sr no.</th>
+              <th>Name</th>
+              <th>Mobile No.</th>
+              <th>Quantity</th>
+              <th>Total Bill</th>
+              <th>Date Of Order</th>
+              <th>Expected Date</th>
+              <th>Payment status</th>
+            </tr>
+          </thead>
+          <tbody *ngFor="let ord of ordersCData">
+          
+              <tr *ngFor="let ord1 of ord">
+                  {{getmeserial()}}
+                <td >{{serialn}}</td>
+                <td>{{ord1.name}}</td>
+                <td>{{ord1.mobilen}}</td>
+                <td>{{ord1.quantity}}</td>
+                <td>{{ord1.totalamount}}</td>
+                <td>{{ord1.date}}</td>
+                <td>{{ord1.dateofdelivery}}</td>
+                <td>
+                    <div *ngIf="isValid(ord1.pendingstatus);else other_content">
+                        <button type="button"  class="btn btn-success" title="Payment Done">Payment Done</button>
+                    </div>
+                    
+                    <ng-template #other_content> 
+                      <button type="button"  class="btn btn-danger" title="Pending">Pending</button>
+                    </ng-template>
+                   
+                </td>
+              </tr>
+               
+            </tbody>
+        </table>
+  </div>

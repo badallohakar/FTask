@@ -1,0 +1,45 @@
+<div class="container">
+
+  <h2 class="text-align">Requested Orders</h2>
+
+    <table class="table">
+        <thead>
+          <tr>
+            <th>Sr no.</th>
+            <th>Name</th>
+            <th>Mobile No.</th>
+            <th>Quantity</th>
+            <th>Total Bill</th>
+            <th>Date Of Order</th>
+            <th>Operation</th>
+          </tr>
+        </thead>
+        <tbody *ngFor="let ord of ordersData">
+          
+          <tr *ngFor="let ord1 of ord">
+              {{getmeserial()}}
+            <td >{{serialn}}</td>
+            <td>{{ord1.name}}</td>
+            <td>{{ord1.mobilen}}</td>
+            <td>{{ord1.quantity}}</td>
+            <td>{{ord1.totalamount}}</td>
+            <td>{{ord1.date}}</td>
+            <td>
+                <button type="button" (click)="sendtoConform(ord1.orderuid)" class="btn btn-primary" title="Confirm Order" >Confirm</button>&nbsp;
+                <button type="button"  (click)="sendtoGetFetails(serialn-1)" class="btn btn-info" title="View Order Details">Details</button>&nbsp;
+                <button type="button" (click)="sendtoDelete(ord1.orderuid)" class="btn btn-danger" title="Delete">X</button>
+            </td>
+          </tr>
+           
+        </tbody>
+      </table>
+      
+      <div class="thumbnail" *ngFor="let order of cnfrmationsatusofcnfrm">
+        <!-- <img src="{{order.avatar}}"/> -->
+        <div class="caption">
+          <!-- <h3>{{order.first_name}} {{order.last_name}}</h3> -->
+          <!-- <strong>{{order.id}}</strong> -->
+        </div>
+      </div>
+
+</div>

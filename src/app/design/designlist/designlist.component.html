@@ -1,0 +1,27 @@
+<div class="container">
+    <div [hidden]="flag">
+      <div class="reslt"> {{result}}</div>
+   </div>
+      <h2 class="text-align">Employee List</h2>
+    
+        <table class="table">
+            <thead>
+              <tr>
+                <th>Design Name</th>
+                <th>Design ID</th>
+                <th>Preview</th>
+                <th>Operation</th>
+              </tr>
+            </thead>
+            <tbody *ngFor="let p of dataofdesignlist">
+              <tr *ngFor="let c of p">
+                
+                <td>{{c.name}}</td>
+                <td>{{c.id}}</td>
+                <td><img src="http://www.wepack.in/{{c.path}}" alt="www.wepack.in/{{c.path}}" class="imgsi"></td>
+                <td> <button type="button" (click)="sendtoDelete(c.id)" class="btn btn-danger" title="Delete">X</button></td>
+              </tr>
+             
+            </tbody>
+          </table>
+    </div>

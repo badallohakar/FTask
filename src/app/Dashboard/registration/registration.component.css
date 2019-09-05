@@ -1,0 +1,14 @@
+.backr{
+    background:url('../../../assets/images/back.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.reslt{
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    background:rgb(253, 0, 69) ;
+    color: white;
+    size: 18px;
+}

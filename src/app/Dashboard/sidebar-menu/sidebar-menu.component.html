@@ -1,0 +1,21 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-2 sidebar">
+        <ul class="list-group list-group-flush">
+            <li class="item1"><img src="../../../assets/images/logowepack.jpg" width="100%"></li>
+            <li class="item" [routerLinkActive]="['active']" [routerLink]="['/sidebar/orders']">Current Order</li>
+            <li class="item" [routerLinkActive]="['active']" [routerLink]="['/sidebar/pendingorders']">Pending Orders</li>
+            <li class="item" [routerLinkActive]="['active']" [routerLink]="['/sidebar/completedorders']">Completed Order</li>
+            <li class="item" [routerLinkActive]="['active']" [routerLink]="['/sidebar/register']">Registration</li>
+            <li class="item" [routerLinkActive]="['active']" [routerLink]="['/sidebar/employeelist']">Employee Register List</li>
+            <li class="item" [routerLinkActive]="['active']" [routerLink]="['/sidebar/updatepstatus']">Update Payment Status</li>
+            <li class="item" [routerLinkActive]="['active']" [routerLink]="['/sidebar/ratedashboard']">Rate Updates</li>
+            <li class="item" [routerLinkActive]="['active']" [routerLink]="['/sidebar/design']">Designs</li>
+            <li class="item" [routerLinkActive]="['active']" [routerLink]="['/login']" (click)="logout()">Log-out</li>
+        </ul>
+    </div>
+    <div class="col-md-10 contents">
+        <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

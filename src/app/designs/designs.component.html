@@ -1,0 +1,18 @@
+<div class="container">
+  <br/>
+  <div class="row">
+      <div class="col-md-6 text-center">
+          <h5 [routerLinkActive]="['active']" [routerLink]="['/sidebar/design/designlist']">Design Lists</h5>
+      </div>
+      <div class="col-md-6 text-center">
+        <h5 [routerLinkActive]="['active']" [routerLink]="['/sidebar/design/designupload']">Upload New Design</h5>
+      </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12 contents">
+      <router-outlet>
+
+      </router-outlet>
+    </div>
+  </div>
+</div>

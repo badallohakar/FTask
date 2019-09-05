@@ -1,0 +1,374 @@
+<div class="container card" style="background:lightgoldenrodyellow;">
+  <div class="row" >
+  <div class="col-md-4">
+      <h4>Top Board Quality</h4>
+    <ul class="list-group">
+      <li class="list-group-item">
+        FBB
+        <input type="number" class="inte" #fbb>
+        <button class="btn btn-success" (click)="updatecurrentfiled('a',1,fbb.value)">Update</button> 
+      </li>
+      <li class="list-group-item">Prm GrayBack <input type="number" #pgb class="inte">
+        <button class="btn btn-success" (click)="updatecurrentfiled('a',2,pgb.value)">Update</button>     
+        </li> <li class="list-group-item">Prm BackLower <input type="number" #pbl class="inte">
+          <button class="btn btn-success" (click)="updatecurrentfiled('a',3,pbl.value)">Update</button>        
+        </li>
+    </ul>
+    <h4>Bottom Board Quality</h4>
+    <ul class="list-group">
+      <li class="list-group-item">
+        FBB
+        <input type="number" class="inte" #bfbb>
+        <button class="btn btn-success" (click)="updatecurrentfiled('c',1,bfbb.value)">Update</button>
+      
+      </li>
+      <li class="list-group-item">Prm GrayBack <input type="number" #bpgb class="inte">
+        <button class="btn btn-success" (click)="updatecurrentfiled('c',2,bpgb.value)">Update</button>
+        
+        </li> <li class="list-group-item">Prm BackLower <input type="number" #bpbl class="inte">
+          <button class="btn btn-success" (click)="updatecurrentfiled('c',3,bpbl.value)">Update</button>
+          
+          </li>
+    </ul>
+    <h4>Top Board Printing</h4>
+    <ul class="list-group">
+      <li class="list-group-item">
+        Screen
+        <input type="number" class="inte" #ps>
+        <button class="btn btn-success" (click)="updatecurrentfiled('e',1,ps.value)">Update</button>
+      
+      </li>
+      <li class="list-group-item">UV <input type="number" #puv class="inte">
+        <button class="btn btn-success" (click)="updatecurrentfiled('e',2,puv.value)">Update</button>
+        
+        </li> <li class="list-group-item">Offset <input type="number" #po class="inte">
+          <button class="btn btn-success" (click)="updatecurrentfiled('e',3,po.value)">Update</button>
+          
+          </li>
+          <li class="list-group-item">Digital <input type="number" #pd class="inte">
+            <button class="btn btn-success" (click)="updatecurrentfiled('e',3,pd.value)">Update</button>
+            
+            </li>
+    </ul>
+    <h4>Top Board Micro</h4>
+    <ul class="list-group">
+      <li class="list-group-item">
+        Micro
+        <input type="number" class="inte" #tm>
+        <button class="btn btn-success" (click)="updatecurrentfiled('f',1,tm.value)">Update</button>
+      
+      </li>
+     
+    </ul>
+    <h4>Bottom Board Micro</h4>
+    <ul class="list-group">
+      <li class="list-group-item">
+        Micro
+        <input type="number" class="inte" #bm>
+        <button class="btn btn-success" (click)="updatecurrentfiled('l',1,bm.value)">Update</button>
+      
+      </li>
+     
+    </ul>
+    <h4>UV</h4>
+    <ul class="list-group">
+      <li class="list-group-item">
+        Glossy
+        <input type="number" class="inte" #ug>
+        <button class="btn btn-success" (click)="updatecurrentfiled('h',1,ug.value)">Update</button>
+      
+      </li>
+      <li class="list-group-item">
+        Embroidery
+        <input type="number" class="inte" #ue>
+        <button class="btn btn-success" (click)="updatecurrentfiled('h',1,ue.value)">Update</button>
+      
+      </li>
+     
+    </ul>
+    
+   
+  </div> <div class="col-md-4">
+      <h4>Top Board Lamination</h4>
+    <ul class="list-group">
+      <li class="list-group-item">Glossy  <input type="number" #tgls class="inte">
+      <button class="btn btn-success" (click)="updatecurrentfiled('b',1,tgls.value)">Update</button>
+      
+      </li>
+      <li class="list-group-item">Matt  <input type="number" #mtt class="inte">
+        <button class="btn btn-success" (click)="updatecurrentfiled('b',2,mtt.value)">Update</button>
+        </li>
+         <li class="list-group-item">Silver  <input type="number" #slvr class="inte">
+          <button class="btn btn-success" (click)="updatecurrentfiled('b',3,slvr.value)">Update</button>
+          
+          </li>
+         <li class="list-group-item">Golden  <input type="number" #gldn class="inte">
+          <button class="btn btn-success" (click)="updatecurrentfiled('b',4,gldn.value)">Update</button>
+          
+          </li>
+        <li class="list-group-item">3D  <input type="number" #td class="inte">
+          <button class="btn btn-success" (click)="updatecurrentfiled('b',5,td.value)">Update</button>
+          
+          </li>
+         <li class="list-group-item">Polyster  <input type="number" #ply class="inte">
+          <button class="btn btn-success" (click)="updatecurrentfiled('b',6,ply.value)">Update</button>  
+          </li>  
+          <li class="list-group-item">UV Coating  <input type="number" #uvc class="inte">
+            <button class="btn btn-success" (click)="updatecurrentfiled('b',7,uvc.value)">Update</button>  
+            </li>
+         <li class="list-group-item">Colour Lamination  <input type="number" #clm class="inte">
+          <button class="btn btn-success" (click)="updatecurrentfiled('b',8,clm.value)">Update</button>  
+          </li>
+    </ul>
+    <h4>Bottom Board Printing</h4>
+    <ul class="list-group">
+      <li class="list-group-item">
+        Screen
+        <input type="number" class="inte" #bps>
+        <button class="btn btn-success" (click)="updatecurrentfiled('j',1,bps.value)">Update</button>
+      
+      </li>
+      <li class="list-group-item">UV <input type="number" #buvp class="inte">
+        <button class="btn btn-success" (click)="updatecurrentfiled('j',2,buvp.value)">Update</button>
+        
+        </li> <li class="list-group-item">Offset <input type="number" #bpo class="inte">
+          <button class="btn btn-success" (click)="updatecurrentfiled('j',3,bpo.value)">Update</button>
+          
+          </li>
+          <li class="list-group-item">Digital <input type="number" #bpd class="inte">
+            <button class="btn btn-success" (click)="updatecurrentfiled('j',3,bpd.value)">Update</button>
+            
+            </li>
+    </ul>
+    <h4>Top Board Embos</h4>
+    <ul class="list-group">
+      <li class="list-group-item">
+        Embos
+        <input type="number" class="inte" #tbe>
+        <button class="btn btn-success" (click)="updatecurrentfiled('g',1,tbe.value)">Update</button>
+      
+      </li>
+      </ul>
+
+  </div> <div class="col-md-4">
+    <h4>Bottom Board Lamination</h4>
+    <ul class="list-group">
+      <li class="list-group-item">Glossy  <input type="number" #bgls class="inte">
+      <button class="btn btn-success" (click)="updatecurrentfiled('d',1,bgls.value)">Update</button>
+      
+      </li>
+      <li class="list-group-item">Matt  <input type="number" #bmtt class="inte">
+        <button class="btn btn-success" (click)="updatecurrentfiled('d',2,bmtt.value)">Update</button>
+        </li>
+         <li class="list-group-item">Silver  <input type="number" #bslvr class="inte">
+          <button class="btn btn-success" (click)="updatecurrentfiled('d',3,bslvr.value)">Update</button>
+          
+          </li>
+         <li class="list-group-item">Golden  <input type="number" #bgldn class="inte">
+          <button class="btn btn-success" (click)="updatecurrentfiled('d',4,bgldn.value)">Update</button>
+          
+          </li>
+        <li class="list-group-item">3D  <input type="number" #btd class="inte">
+          <button class="btn btn-success" (click)="updatecurrentfiled('d',5,btd.value)">Update</button>
+          
+          </li>
+         <li class="list-group-item">Polyster  <input type="number" #bply class="inte">
+          <button class="btn btn-success" (click)="updatecurrentfiled('d',6,bply.value)">Update</button>  
+          </li>
+          
+         
+          <li class="list-group-item">UV Coating  <input type="number" #buvc class="inte">
+            <button class="btn btn-success" (click)="updatecurrentfiled('d',7,ply.value)">Update</button>  
+            </li>
+         <li class="list-group-item">Colour Lamination  <input type="number" #buvc class="inte">
+          <button class="btn btn-success" (click)="updatecurrentfiled('d',8,ply.value)">Update</button>  
+          </li>
+    </ul>
+    <h4>Discount</h4>
+    <ul class="list-group">
+      <li class="list-group-item">Discount  <input type="number" #ds class="inte">
+      <button class="btn btn-success" (click)="updatediscount('ds',ds.value)">Update</button>
+      </li>
+      </ul>
+      <h4>Top Board Punching</h4>
+      <ul class="list-group">
+        <li class="list-group-item">
+          Punching
+          <input type="number" class="inte" #tpun>
+          <button class="btn btn-success" (click)="updatecurrentfiled('m',1,tpun.value)">Update</button>
+        
+        </li>
+       
+      </ul>
+      <h4>Bottom Board Punching</h4>
+      <ul class="list-group">
+        <li class="list-group-item">
+          Punching
+          <input type="number" class="inte" #bpun>
+          <button class="btn btn-success" (click)="updatecurrentfiled('k',1,bpun.value)">Update</button>
+        
+        </li>
+       
+      </ul>
+      <h4>Top Board Pasting</h4>
+    <ul class="list-group">
+      <li class="list-group-item">
+        Side
+        <input type="number" class="inte" #tpsi>
+        <button class="btn btn-success" (click)="updatecurrentfiled('i',1,tpsi.value)">Update</button>
+      
+      </li>
+      <li class="list-group-item">Interlock <input type="number" #tpsin class="inte">
+        <button class="btn btn-success" (click)="updatecurrentfiled('i',2,tpsin.value)">Update</button>
+        
+        </li> 
+          
+    </ul>
+  </div>
+</div>
+<br/>
+
+<div class="row">
+  <div class="col-md-4">
+    <h4>Top Board Rates</h4>
+    <ul class="list-group align-center">
+      <li class="list-group-item">FBB :- {{ratelist[0].rate}}
+      
+      </li>
+      
+      <li class="list-group-item">prm GrayBack :- {{ratelist[1].rate}}
+      
+      </li>
+      
+      <li class="list-group-item">prm BackLower :- {{ratelist[2].rate}}
+      
+      </li>
+      
+      <li class="list-group-item">Glossy :- {{ratelist[3].rate}}
+      
+      </li>
+      
+      <li class="list-group-item">Matt :- {{ratelist[4].rate}}
+      
+      </li>
+      
+      <li class="list-group-item">Silver :- {{ratelist[5].rate}}
+      
+      </li>
+      
+      <li class="list-group-item">Golden :- {{ratelist[6].rate}}
+      
+      </li>
+      
+      <li class="list-group-item">3D :- {{ratelist[7].rate}}
+      
+      </li>
+      
+      <li class="list-group-item">Plyster :- {{ratelist[8].rate}}
+      
+      </li>
+      <li class="list-group-item">UV Coating :- {{ratelist[9].rate}}
+      
+        </li>
+        <li class="list-group-item">Color Lamination :- {{ratelist[10].rate}}
+      
+          </li>
+          <li class="list-group-item">Screen Printing :- {{ratelist[22].rate}}
+      
+            </li>
+            <li class="list-group-item">Uv Printing :- {{ratelist[23].rate}}
+          
+              </li>
+              <li class="list-group-item">Offset Printing :- {{ratelist[24].rate}}
+    
+                </li>
+                <li class="list-group-item">Digital Printing :- {{ratelist[25].rate}}
+              
+                  </li>
+                  <li class="list-group-item">Punching :- {{ratelist[38].rate}}
+                
+                    </li>
+                  <li class="list-group-item">Micro :- {{ratelist[26].rate}}
+                
+                    </li>
+                    <li class="list-group-item">Embos :- {{ratelist[27].rate}}
+                
+                      </li>
+                    <li class="list-group-item">UV -> Glossy :- {{ratelist[28].rate}}</li>
+                    <li class="list-group-item">UV -> Embroidery :- {{ratelist[29].rate}}</li>
+                    <li class="list-group-item">Pasting -> Side :- {{ratelist[30].rate}}</li>
+                    <li class="list-group-item">Pasting -> Interlock :- {{ratelist[31].rate}}</li>
+      </ul>
+  </div>
+  <div class="col-md-4">
+      <h4>Bottom Board Rates</h4>
+      <ul class="list-group align-center">
+        <li class="list-group-item">FBB :- {{ratelist[11].rate}}
+        
+        </li>
+        
+        <li class="list-group-item">prm GrayBack :- {{ratelist[12].rate}}
+        
+        </li>
+        
+        <li class="list-group-item">prm BackLower :- {{ratelist[13].rate}}
+        
+        </li>
+        
+        <li class="list-group-item">Glossy :- {{ratelist[14].rate}}
+        
+        </li>
+        
+        <li class="list-group-item">Matt :- {{ratelist[15].rate}}
+        
+        </li>
+        
+        <li class="list-group-item">Silver :- {{ratelist[16].rate}}
+        
+        </li>
+        
+        <li class="list-group-item">Golden :- {{ratelist[17].rate}}
+        
+        </li>
+        
+        <li class="list-group-item">3D :- {{ratelist[18].rate}}
+        
+        </li>
+        
+        <li class="list-group-item">Plyster :- {{ratelist[19].rate}}
+        
+        </li>
+        
+        <li class="list-group-item">UV Coating :- {{ratelist[20].rate}}
+      
+          </li>
+          <li class="list-group-item">Color Lamination :- {{ratelist[21].rate}}
+        
+            </li>
+            <li class="list-group-item">Screen Printing :- {{ratelist[32].rate}}
+      
+              </li>
+              <li class="list-group-item">Uv Printing :- {{ratelist[33].rate}}
+            
+                </li>
+                <li class="list-group-item">Offset Printing :- {{ratelist[34].rate}}
+      
+                  </li>
+                  <li class="list-group-item">Digital Printing :- {{ratelist[35].rate}}
+                
+                    </li>
+                    <li class="list-group-item">Punching :- {{ratelist[36].rate}}
+                
+                      </li>
+                    <li class="list-group-item">Micro :- {{ratelist[37].rate}}
+                
+                      </li>
+        </ul>
+  </div>
+  <div class="col-md-4">
+    <ul>
+     
+</ul>
+  </div>
+</div>
+</div>

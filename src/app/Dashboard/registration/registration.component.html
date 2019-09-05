@@ -1,0 +1,34 @@
+<div class="container backr">
+  <div class="row">
+    <div class="col-md-2">
+
+    </div>
+      <div class="col-md-8">
+        <div [hidden]="flag">
+           <div class="reslt"> {{result}}</div>
+        </div>
+          <div class="loginparent">
+              <div class="loginparameter">
+                  <div class="text-center" style="padding:5px">
+                      <h2>Registration</h2>
+                  </div>
+                    <form #registrationform="ngForm" (ngSubmit) = "registerData(registrationform)" >
+                <input type="text" [(ngModel)]="name"  class="form-control form-control-lg" placeholder="Enter Name" name="name" >
+                <input type="text" [(ngModel)]="email" class="form-control form-control-lg mtop" placeholder="Enter Email" name="email">
+                <input type="text" [(ngModel)]="number" class="form-control form-control-lg mtop" placeholder="Enter Phone Number" name="number">
+                <input type="text" [(ngModel)]="adress" class="form-control form-control-lg mtop" placeholder="Enter Address" name="adress">
+                <input type="text" [(ngModel)]="uid" class="form-control form-control-lg mtop" placeholder="Enter User ID" name="uid">
+                <input type="password" [(ngModel)]="password" class="form-control form-control-lg mtop" placeholder="Enter Password" name="password">
+                
+                <button type="button" type="reset" class="btn custombtn">Reset</button>
+                <button type="button" type="submit" class="btn custombtn" >Register</button>     
+            </form>
+              </div>
+              
+            </div>
+      </div>
+      <div class="col-md-2">
+
+        </div>
+  </div>  
+</div>
